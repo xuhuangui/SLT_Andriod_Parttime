@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niit.slt_andriod_parttime"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+   <!-- 定位权限 -->
+   
+   
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bbs_avatar_anonymity_1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.amap.api.v2.apikey"
+                   android:value="b0b37f05bd610b5412ed4aa08fe04ac9" />
+        
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.niit.parttime.ui.users.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.niit.slt_andriod_parttime.MainActivity" >
+        </activity>
+         <activity
+            android:name="com.niit.parttime.ui.job.ParttimeList" >
+        </activity>
+        <activity
+            android:name="com.niit.parttime.ui.users.ForgotpwdActivity" >
+        </activity>
+        <activity
+            android:name="com.niit.parttime.ui.users.RegisterActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.niit.parttime.ui.job.parttimeView" >
+        </activity>
+        
+         <activity
+            android:name="com.niit.parttime.ui.users.AboutMeActivity" >
+        </activity>
+        
+         <activity
+            android:name="com.niit.parttime.ui.users.CommenttaryActivity" >
+        </activity>
+        
+          <activity
+            android:name="com.niit.parttime.ui.users.ParttimeStory" >
+        </activity>
+        
+           <activity
+            android:name="com.niit.parttime.ui.users.GeRenZiLiaoListActivity" >
+        </activity>
+        
+    </application>
+
+</manifest>
